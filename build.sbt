@@ -1,7 +1,10 @@
-name := "tutorial-cat"
 
-version := "1.0"
+version in ThisBuild := "1.0"
 
-scalaVersion := "2.12.3"
+scalaVersion in ThisBuild := "2.12.6"
 
-libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.13.4" % "test"
+libraryDependencies in ThisBuild += "org.scalacheck" %% "scalacheck" % "1.13.4" % Test
+
+lazy val tutorialCat =
+  Project("tutorial-cat", file("tutorial-cat"))
+

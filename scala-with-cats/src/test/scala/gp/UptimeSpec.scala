@@ -1,0 +1,5 @@
+package gp
+
+class UptimeSpec {
+
+}
